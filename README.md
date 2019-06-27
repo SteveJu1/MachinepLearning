@@ -17,3 +17,5 @@ categorical_crossentropy 和 sparse_categorical_crossentropy 的区别在哪？
 　　one-hot 编码：[0, 0, 1], [1, 0, 0], [0, 1, 0]
 如果你的 tagets 是 数字编码 ，用 sparse_categorical_crossentropy
 　　数字编码：2, 0, 1
+  
+### [Loss function介绍](https://gombru.github.io/2018/05/23/cross_entropy_loss/)
