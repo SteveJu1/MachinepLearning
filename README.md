@@ -16,13 +16,14 @@
 指计算机通过观察环境， 与环境交互， 在吸取信息中学习、 自我更新和进步(从数据中学习)
 
 
-## MachinepLearning
+# MachinepLearning
  基础知识：()
 
 [机器学习笔记-模型评估](https://github.com/lukkyy/MachinepLearning/blob/master/Doc/%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BC%B0.md)   
 [机器学习笔记-特征工程](https://github.com/lukkyy/MachinepLearning/blob/master/Doc/%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B.md)   
-[机器学习笔记-降维](https://github.com/lukkyy/MachinepLearning/blob/master/Doc/%E9%99%8D%E7%BB%B4.md)  
-## DeepLearning
+[机器学习笔记-降维](https://github.com/lukkyy/MachinepLearning/blob/master/Doc/%E9%99%8D%E7%BB%B4.md) 
+
+# DeepLearning
 [目标函数、优化器、激活函数总结](https://blog.csdn.net/xiaozhuge080/article/details/52688613)
 categorical_crossentropy 和 sparse_categorical_crossentropy 的区别在哪？
 
@@ -34,3 +35,9 @@ categorical_crossentropy 和 sparse_categorical_crossentropy 的区别在哪？
 * [Loss function介绍](https://gombru.github.io/2018/05/23/cross_entropy_loss/)
 * [optimizer](http://www.cs.toronto.edu/~tijmen/csc321/slides/lecture_slides_lec6.pdf)
 
+## [Computer-version](https://github.com/lukkyy/Computer-version-toturials)
+## [Natural-Language-Processing](https://github.com/lukkyy/Natural-Language-Processing)
+
+## Tool
+[TensorFlow](https://github.com/lukkyy/TensorFlow_example)
+[Python](https://github.com/lukkyy/Python)
