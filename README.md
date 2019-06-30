@@ -1,6 +1,11 @@
 
 前言：在现实生活中很少还有让我心潮澎湃的东西了，AI算一个。不仅是因为高深难懂的理论知识，或是酷炫屌炸天的的黑科技产品。而是AI能够让我们的未来生活变得更加美好~
-<img width="1080" src="http://www.apachecn.org/wp-content/uploads/2019/04/AILearningRoadMap.jpg">
+## Infographic about the terminology of AI
+[总结的太好了](https://www.coursera.org/learn/ai-for-everyone/discussions/weeks/1/threads/Ugmr_DzFEemt8g6E7tChUA)   
+<img width="500" src="https://github.com/lukkyy/MachinepLearning/blob/master/pic/AI.jpg">
+## To do and not do
+<img width="500" src="https://github.com/lukkyy/MachinepLearning/blob/master/pic/do_or_not.jpg">
+
 ### 课程
 [AI For Everyone](https://www.coursera.org/learn/ai-for-everyone)
 
