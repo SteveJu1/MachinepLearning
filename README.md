@@ -1,6 +1,6 @@
 
 前言：在现实生活中很少还有让我心潮澎湃的东西了，AI算一个。不仅是因为高深难懂的理论知识，或是酷炫屌炸天的的黑科技产品。而是AI能够让我们的未来生活变得更加美好~
-
+<img width="1080" src="http://www.apachecn.org/wp-content/uploads/2019/04/AILearningRoadMap.jpg">
 ### 课程
 [AI For Everyone](https://www.coursera.org/learn/ai-for-everyone)
 
