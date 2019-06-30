@@ -8,6 +8,7 @@
 
 ### 课程
 [AI For Everyone](https://www.coursera.org/learn/ai-for-everyone)
+[笔记]()
 
 ### 概念
 * 人工智能 
