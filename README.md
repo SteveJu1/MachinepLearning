@@ -26,11 +26,10 @@
 
 # DeepLearning
 [目标函数、优化器、激活函数总结](https://blog.csdn.net/xiaozhuge080/article/details/52688613)
-categorical_crossentropy 和 sparse_categorical_crossentropy 的区别在哪？
-
-如果你的 targets 是 one-hot 编码，用 categorical_crossentropy
+categorical_crossentropy 和 sparse_categorical_crossentropy 的区别在哪？  
+如果你的 targets 是 one-hot 编码，用 categorical_crossentropy  
 　　one-hot 编码：[0, 0, 1], [1, 0, 0], [0, 1, 0]
-如果你的 tagets 是 数字编码 ，用 sparse_categorical_crossentropy
+如果你的 tagets 是 数字编码 ，用 sparse_categorical_crossentropy  
 　　数字编码：2, 0, 1
 ### loss function  
 
@@ -40,7 +39,7 @@ loss fuction的作用是描述model得到的结果（Y）和真实结果（y）�
 loss function与cost fuction区别：loss function描述单个样本，cost fuction 描述整个样本集  
 the loss function for training example and the overall cost function for the parameters of your algorithm
 * [Loss function介绍](https://gombru.github.io/2018/05/23/cross_entropy_loss/)
-### optimizer
+### Gradient Descent
 * [optimizer](http://www.cs.toronto.edu/~tijmen/csc321/slides/lecture_slides_lec6.pdf)
 
 ## [Computer-version](https://github.com/lukkyy/Computer-version-toturials)
