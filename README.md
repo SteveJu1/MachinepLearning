@@ -32,8 +32,14 @@ categorical_crossentropy 和 sparse_categorical_crossentropy 的区别在哪？
 　　one-hot 编码：[0, 0, 1], [1, 0, 0], [0, 1, 0]
 如果你的 tagets 是 数字编码 ，用 sparse_categorical_crossentropy
 　　数字编码：2, 0, 1
-  
+### loss function  
+
+loss fuction的作用是描述model得到的结果（Y）和真实结果（y）的差异，最简单的表达就是 L=（y-Y)^2(也可y-Y) TiP:Y一般写成y^  
+但这个模型不好的地方在于很难收敛：gradient descent not work well(with multiple local optima，gradient descent may not find the global optimum)    
+所以针对不同的问题，有很多不同的loss function能更好的得到最优解. 比如binary crossentropy(二分类), sparse categoracial crossentropy('多分类) TiP:crossentropy交叉熵，用来描述两个数据集的相似程度的/  
+loss function与cost fuction区别：loss function描述仅一个数据，cost fuction 描述整个数据集
 * [Loss function介绍](https://gombru.github.io/2018/05/23/cross_entropy_loss/)
+### optimizer
 * [optimizer](http://www.cs.toronto.edu/~tijmen/csc321/slides/lecture_slides_lec6.pdf)
 
 ## [Computer-version](https://github.com/lukkyy/Computer-version-toturials)
