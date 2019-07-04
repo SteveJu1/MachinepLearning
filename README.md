@@ -1,7 +1,7 @@
 
 前言：在现实生活中很少还有让我心潮澎湃的东西了，AI算一个。不仅是因为高深难懂的理论知识，或是酷炫屌炸天的的黑科技产品。而是AI能够让我们的未来生活变得更加美好~
 ## Infographic about the terminology of AI
-[总结的太好了](https://www.coursera.org/learn/ai-for-everyone/discussions/weeks/1/threads/Ugmr_DzFEemt8g6E7tChUA)   
+[From](https://www.coursera.org/learn/ai-for-everyone/discussions/weeks/1/threads/Ugmr_DzFEemt8g6E7tChUA)   
 <img width="500" src="https://github.com/lukkyy/MachinepLearning/blob/master/pic/AI.jpg">
 ## To do and not do
 <img width="500" src="https://github.com/lukkyy/MachinepLearning/blob/master/pic/do_or_not.jpg">
@@ -37,7 +37,8 @@ categorical_crossentropy 和 sparse_categorical_crossentropy 的区别在哪？
 loss fuction的作用是描述model得到的结果（Y）和真实结果（y）的差异，最简单的表达就是 L=（y-Y)^2(也可y-Y) TiP:Y一般写成y^  
 但这个模型不好的地方在于很难收敛：gradient descent not work well(with multiple local optima，gradient descent may not find the global optimum)    
 所以针对不同的问题，有很多不同的loss function能更好的得到最优解. 比如binary crossentropy(二分类), sparse categoracial crossentropy('多分类) TiP:crossentropy交叉熵，用来描述两个数据集的相似程度的/  
-loss function与cost fuction区别：loss function描述仅一个数据，cost fuction 描述整个数据集
+loss function与cost fuction区别：loss function描述单个样本，cost fuction 描述整个样本集  
+the loss function for training example and the overall cost function for the parameters of your algorithm
 * [Loss function介绍](https://gombru.github.io/2018/05/23/cross_entropy_loss/)
 ### optimizer
 * [optimizer](http://www.cs.toronto.edu/~tijmen/csc321/slides/lecture_slides_lec6.pdf)
