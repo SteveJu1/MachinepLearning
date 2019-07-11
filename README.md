@@ -31,8 +31,22 @@ categorical_crossentropy 和 sparse_categorical_crossentropy 的区别在哪？
 　　one-hot 编码：[0, 0, 1], [1, 0, 0], [0, 1, 0]
 如果你的 tagets 是 数字编码 ，用 sparse_categorical_crossentropy  
 　　数字编码：2, 0, 1
+### Neural network
+通常输入不算nn的层数，
+神经网络的符号惯例:x表示输入特征， a表示每个神经元的输出， W表示特征的权重，上标表示神经网
+络的层数 ，下标表示该层的第几个神经元。
+  tanh 函数是 sigmoid 的向下平移和伸缩后的结果。效果总是优于 sigmoid 函数.因为函数值域在-1 和+1
+的激活函数，其均值是更接近零均值的。在训练一个算法模型时，如果使用 tanh 函数代替sigmoid 函数中心化数据，使得数据的平均值更接近 0 而不是 0.5
+但有一个例外：在二分类的问题中，对于输出层，因为y的值是 0 或 1，所以想让yhat的数值介于 0 和 1 之间，而不是在-1 和+1 之间。所以需要使用 sigmoid 激活函数。
+sigmoid 函数和 tanh 函数两者共同的缺点是，在z特别大或者特别小的情况下，导数的梯度或者函数的斜率会变得特别小，最后就会接近于 0，导致降低梯度下降的速度。在DNN中会出现梯度消失或者梯度爆炸的情况
+若激活函数是线性函数，那无论隐藏层是多少层，做的只是计算线性函数，所以不如直接去掉全部隐藏层
+## 常见激活函数的导数
+sigmoid：sigmoid=g(z),sigmoid(1 − sigmoid)
+Tanh :  1-(Tanh)2
+随机初始化:把偏置项b初始化为 0 是合理的,如果权重都初始化为 0，那么由于神经元（hidden units）开始计算同一个函数，而且不管你训练多久，不同的神经元计算的是同样的函数。因此这种情况下超过1个hidden units也没什么意义
+使用tanh 或者 sigmoid 激活函数，倾向于初始化为很小的随机数。激活函数输出值很大或者很小的话，梯度下降会很慢。  
+如果你没有 sigmoid/tanh 激活函数在你整个的神经网络里，就不成问题
 ### loss function  
-
 loss fuction的作用是描述model得到的结果（Y）和真实结果（y）的差异，最简单的表达就是 L=（y-Y)^2(也可y-Y) TiP:Y一般写成y^  
 但这个模型不好的地方在于很难收敛：gradient descent not work well(with multiple local optima，gradient descent may not find the global optimum)    
 所以针对不同的问题，有很多不同的loss function能更好的得到最优解. 比如binary crossentropy(二分类), sparse categoracial crossentropy('多分类) TiP:crossentropy交叉熵，用来描述两个数据集的相似程度的/  
