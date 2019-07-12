@@ -55,6 +55,8 @@ Tanh :  1-(Tanh)2
 随机初始化:把偏置项b初始化为 0 是合理的,如果权重都初始化为 0，那么由于神经元（hidden units）开始计算同一个函数，而且不管你训练多久，不同的神经元计算的是同样的函数。因此这种情况下超过1个hidden units也没什么意义.  
 使用tanh 或者 sigmoid 激活函数，倾向于初始化为很小的随机数。激活函数输出值很大或者很小的话，梯度下降会很慢。  
 如果你没有 sigmoid/tanh 激活函数在你整个的神经网络里，就不成问题
+
+###　超参数：需要自己设置
 ### loss function  
 loss fuction的作用是描述model得到的结果（Y）和真实结果（y）的差异，最简单的表达就是 L=（y-Y)^2(也可y-Y) TiP:Y一般写成y^  
 但这个模型不好的地方在于很难收敛：gradient descent not work well(with multiple local optima，gradient descent may not find the global optimum)    
