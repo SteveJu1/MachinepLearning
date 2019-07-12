@@ -40,10 +40,16 @@ tanh 函数是 sigmoid 的向下平移和伸缩后的结果。效果总是优于
 但有一个例外：在二分类的问题中，对于输出层，因为y的值是 0 或 1，所以想让yhat的数值介于 0 和 1 之间，而不是在-1 和+1 之间。所以需要使用 sigmoid 激活函数。
 sigmoid 函数和 tanh 函数两者共同的缺点是，在z特别大或者特别小的情况下，导数的梯度或者函数的斜率会变得特别小，最后就会接近于 0，导致降低梯度下降的速度。在DNN中会出现梯度消失或者梯度爆炸的情况  
 若激活函数是线性函数，那无论隐藏层是多少层，做的只是计算线性函数，所以不如直接去掉全部隐藏层
-Neural network Dimensions:假如训练数据有m个样本，每层的神经元有n个，z=wx+b   
+#### Neural network Dimensions
+:假如训练数据有m个样本，每层的神经元有n个，z=wx+b   
 则 z: (n,m)  w:(n,(n-1)) b(n,1)
 Tip:W的维度是 当前层的 * 前一层 ，若相反的话要转置 ，其他参数都是 当前层 
-## 常见激活函数的导数
+
+#### why deep
+* 拿图像举例，每层nn相当于特征提取器，前几层提取简单的特征（是否是直线等），后面的层数做特征组合，提取复杂的特征（如人脸轮廓）。
+* 另外一个神经网络为何有效来源于电路理论，如果是一层nn，复杂度 0 (2**n)， 若是多层复杂度 0 (log(n))
+[Forward and Backward Propagation推导过程](https://www.coursera.org/learn/neural-networks-deep-learning/lecture/znwiG/forward-and-backward-propagation)
+### 常见激活函数的导数
 sigmoid：sigmoid=g(z),sigmoid(1 − sigmoid)
 Tanh :  1-(Tanh)2
 随机初始化:把偏置项b初始化为 0 是合理的,如果权重都初始化为 0，那么由于神经元（hidden units）开始计算同一个函数，而且不管你训练多久，不同的神经元计算的是同样的函数。因此这种情况下超过1个hidden units也没什么意义.  
