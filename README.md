@@ -48,7 +48,7 @@ Tip:W的维度是 当前层的 * 前一层 ，若相反的话要转置 ，其他
 #### why deep
 * 拿图像举例，每层nn相当于特征提取器，前几层提取简单的特征（是否是直线等），后面的层数做特征组合，提取复杂的特征（如人脸轮廓）。
 * 另外一个神经网络为何有效来源于电路理论，如果是一层nn，复杂度 0 (2**n)， 若是多层复杂度 0 (log(n))
-[Forward and Backward Propagation推导过程](https://www.coursera.org/learn/neural-networks-deep-learning/lecture/znwiG/forward-and-backward-propagation)
+### [Forward and Backward Propagation推导过程](https://www.coursera.org/learn/neural-networks-deep-learning/lecture/znwiG/forward-and-backward-propagation)
 ### 常见激活函数的导数
 sigmoid：sigmoid=g(z),sigmoid(1 − sigmoid)
 Tanh :  1-(Tanh)2
